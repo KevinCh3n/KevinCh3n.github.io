@@ -1,0 +1,37 @@
+summary {
+    text-align: center;
+    font-size:50px;
+
+}
+
+details {
+    margin: auto;
+    width: 50%;
+    background-color: rgb(88, 46, 26); border: 10px ridge rgb(0, 0, 0);
+    margin-top: 200px;
+    border-radius: 25px;
+}
+
+
+.content{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+body {
+    background-image: url(https://storage.theoryandpractice.ru/tnp/uploads/image_block/000/030/908/image/base_f45a2d7e8e.gif);
+    background-size: auto;
+    background-repeat: auto;
+    background-position: center;
+    
+    
+}
+
+.left {
+    text-align: left;
+    float: left;
+    font-size: 10px;
+    border:5px dashed yellow;
+    background-color:yellow;
+    border-radius: 25px;
+}

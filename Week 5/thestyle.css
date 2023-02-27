@@ -1,0 +1,45 @@
+body{
+    height: 1000px;
+}
+
+.header-title{
+    text-align: center;
+    margin:50px;
+    border: dotted 10px;
+    padding:2vw;
+    background-color: rgb(247, 162, 134);
+    border-radius: 1000px;
+    font-family:Jokerman;
+    font-size: 50px;
+  
+}
+
+.content{
+    color:pink;
+    font-size:40px;
+}
+
+.right {
+    text-align: right;
+    float: right;
+    font-size: 10px;
+    border:5px dashed yellow;
+    background-color:yellow;
+    border-radius: 25px;
+}
+
+img {
+width: 35%;
+margin-left: auto;
+margin-right: auto;
+display:block;
+margin-bottom:25px;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/originals/88/ab/6f/88ab6fc8837df865a201eaa1af8607e2.gif);
+    background-size: auto;
+    background-repeat: auto;
+    background-position: center;
+    
+}
