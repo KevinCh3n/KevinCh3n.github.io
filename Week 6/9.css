@@ -1,0 +1,128 @@
+.fade-in {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+    color:black;
+    font-size: 50px;
+  }
+  
+  @keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .slide-in {
+    transform: translateX(0);
+    animation-name: slide-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes slide-in {
+    from {transform: translateX(0);}
+    25% {transform: translateX(25px);}
+    50% {transform: translateX(75px);}
+    to {transform: translateX(300px);}
+  }
+
+  .scale {
+    text-align: center;
+    transform: scale(1);
+    animation-name: scale;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+   
+  }
+  
+  @keyframes scale {
+    from {transform: scale(1);}
+    to {transform: scale(5); translate(100px);}
+  }
+
+  .bounce {
+    transform: translateY(0);
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite;
+  }
+  
+  @keyframes bounce {
+    from {transform: translateY(0);}
+    50% {transform: translateY(-100px);}
+    to {transform: translateY(0);}
+  }
+
+  .line {
+    position: relative;
+    width: 200px;
+    height: 10px;
+    background-color: #333;
+    margin: 50px auto;
+    overflow: hidden;
+   }
+ 
+   .line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 10px;
+    background-color: #f00;
+    animation: draw-line 2s linear infinite;
+   }
+ 
+   @keyframes draw-line {
+    from {
+     left: -200px;
+    }
+    to {
+     left: 100%;
+    }
+   }
+
+   .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    animation: circle-pulse 2s linear infinite;
+  }
+
+  @keyframes circle-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 20px rgba(255, 0, 0, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
+  }
+
+  .square {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: rotate-square 2s linear infinite;
+  }
+  
+  @keyframes rotate-square {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+  }
