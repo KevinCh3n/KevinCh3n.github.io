@@ -1,0 +1,119 @@
+.row{
+    display: flex;
+    margin: 50px auto 0;
+    width: 90%;
+    gap: 20px;
+    
+}
+
+.page-row {
+    display: flex;
+    
+    align-items: center;
+}
+
+.button {
+    height: 50px;
+}
+
+
+.img-split {
+    width:40%
+}
+
+.text-split {
+    width: 60%;
+    font-size: 27px;
+}
+
+.image-split3{
+    width:80%;
+    
+}
+
+.img-grid {
+    /*height: 40%;*/
+    width: 50%;
+}
+
+.text-grid {
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.fade-in {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    color:black;
+    font-size: 50px;
+  }
+  
+  @keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+body{
+    background-color: powderblue;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 80px;
+    margin-top: 380px;
+}
+
+.fade-in {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    font-size: 20px;
+    color:plum
+    
+  }
+  
+  @keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .bounce {
+    transform: translateY(0);
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite;
+  }
+  
+  @keyframes bounce {
+    from {transform: translateY(0);}
+    50% {transform: translateY(-100px);}
+    to {transform: translateY(0);}
+  }
+
+  .slide-in {
+    transform: translateX(0);
+    animation-name: slide-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes slide-in {
+    from {transform: translateX(0);}
+    25% {transform: translateX(1000px);}
+    50% {transform: translateX(400px);}
+    to {transform: translateX(800px);}
+  }
