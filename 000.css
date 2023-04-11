@@ -15,4 +15,9 @@ body{
               0 0 0.9px #bc13fe,
               0 0 5.8px #bc13fe,
               inset 0 0 3.3px #bc13fe;
+              padding:20px;
+              width: 35vh;
+}
+body{
+  text-decoration: none;
 }

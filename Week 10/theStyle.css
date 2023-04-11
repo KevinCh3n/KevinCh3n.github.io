@@ -1,0 +1,55 @@
+main {
+    background-color: rgb(128, 86, 86);
+    height: 40vh;
+    padding: 40vw;
+}
+
+button {
+    padding: 10vw;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: red;
+    animation: circle-pulse 2s linear infinite;
+  }
+
+  @keyframes circle-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 20px rgba(255, 0, 0, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
+    
+}
+
+
+button:hover{
+    background-color: rgb(253, 253, 253);
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    animation: circle-pulse 2s linear infinite;
+  }
+
+  @keyframes circle-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 20px rgba(255, 0, 0, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
+  }
+
+  
