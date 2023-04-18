@@ -10,6 +10,20 @@
     color: #ffffff;
     font-size: 12px;
     }
+
+    .bounce {
+    transform: translateY(0);
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite;
+  }
+  
+  @keyframes bounce {
+    from {transform: translateY(0);}
+    50% {transform: translateY(-100px);}
+    to {transform: translateY(0);}
+  }
     
     section {
     padding: 5rem;
@@ -23,7 +37,9 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <section>
+        <div class="title bounce";> 
     <h1 style="text-align: center; font-size: 50px;">The Medium Is The Massage</h1>
+    </div>
     <br>
     <p style="font-size: 30px;">
         "The Medium is the Massage" is a book by Marshall McLuhan and Quentin Fiore that explores the impact of media on human perception and society. Published in 1967, the book argues that the medium through which a message is conveyed is just as important as the message itself, and that different media have different effects on our perception of the world. McLuhan suggests that print media encourages a linear and analytical way of thinking, while television and electronic media encourage a more sensory and holistic way of experiencing the world.
