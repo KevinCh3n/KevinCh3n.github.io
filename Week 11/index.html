@@ -1,0 +1,58 @@
+<style> 
+    body,
+    html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: 'Comfortaa', cursive;
+    color: #ffffff;
+    font-size: 12px;
+    }
+    
+    section {
+    padding: 5rem;
+    box-sizing: border-box;
+    }
+    
+    span {
+    cursor: pointer;
+    }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <section>
+    <h1 style="text-align: center; font-size: 50px;">The Medium Is The Massage</h1>
+    <br>
+    <p style="font-size: 30px;">
+        "The Medium is the Massage" is a book by Marshall McLuhan and Quentin Fiore that explores the impact of media on human perception and society. Published in 1967, the book argues that the medium through which a message is conveyed is just as important as the message itself, and that different media have different effects on our perception of the world. McLuhan suggests that print media encourages a linear and analytical way of thinking, while television and electronic media encourage a more sensory and holistic way of experiencing the world.
+    
+        The book is also notable for its innovative design, which uses a combination of text, images, and typography to create a collage-like effect that reinforces its message and style. The book is not arranged in a traditional linear format, but rather presents a series of interconnected ideas that are meant to be experienced holistically.
+      
+        Overall, "The Medium is the Massage" is a thought-provoking examination of the role of media in shaping our culture and consciousness. It challenges readers to think critically about the media they consume and how it affects their understanding of the world and themselves.
+    </p>
+    <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*BoPx9avLZfnQO6HOj0iCdQ.jpeg">
+    <img style="height: 40%; padding-left:60px;" src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_500,h_500/https://framme.com/wp-content/uploads/2020/09/medium.gif">
+    <img style="height: 40%;" src="https://i.pinimg.com/originals/31/ec/99/31ec99748c81ac11b16737a21439cad3.png">
+</section>
+    <script>
+    $(document).ready(function () {
+    var text = $("p").text();
+    var newtext = " <span> ";
+    var newchar = " </span><span> ";
+    newtext += text.split(' ').join(newchar);
+    $("p").html(newtext);
+    $("span").hover(function () {
+    $(this).css({
+    "background-color": "#ff5252",
+    "color": "#000"
+    });
+    }, function () {
+    $(this).css({
+    "background-color": "unset",
+    "color": "#fff"
+    });
+    });
+    });
+    </script><a href='www.javascriptfreecode.com' style='font-size: 8pt; text-decoration: none'>Tutorial</a>
