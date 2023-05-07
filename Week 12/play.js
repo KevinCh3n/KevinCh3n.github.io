@@ -1,9 +1,9 @@
 // Background scrolling speed
-let move_speed = 2.5;
+let move_speed = 3;
 
 const windowHeight = window.innerHeight;
 
-const fallFactor = windowHeight * .00003;
+const fallFactor = windowHeight * .0003;
 
 // Getting reference to the bird element
 let bat = document.querySelector('.bat');
@@ -108,8 +108,7 @@ function play() {
 					}
 					element.style.left =
 						pipe_sprite_props.left - move_speed + 'px';
-				}
-			}
+				}}
 		})
 		requestAnimationFrame(move);
 	};
@@ -122,7 +121,7 @@ function play() {
 		bird_dy = bird_dy + fallFactor;
 		document.addEventListener('keydown', (e) => {
 			if (e.key == 'ArrowUp' || e.key == ' ') {
-				bird_dy = -3.0;
+				bird_dy = -8;
 			}
 		});
 
